@@ -17,8 +17,8 @@ use App\Http\Controllers\Api\CommentsController;
 */
 
 Route::apiResource([
-    '/posts', PostsController::class,
-    '/comments', CommentsController::class,
+    'posts' => PostsController::class,
+    'comments' => CommentsController::class,
 ]);
 Route::put('/posts/upvote/{id}', PostsController::class . '@upvote');
 
